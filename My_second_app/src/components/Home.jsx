@@ -8,20 +8,19 @@ const Home = () => {
           <div className="row align-items-center">
 
             <div className="col-md-6">
-              <h1>Welcome to my Site</h1>
-
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Doloribus, officia. Quisquam, voluptatibus.
-              </p>
-
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Doloribus, officia. Quisquam, voluptatibus.
+             <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, officia. Quisquam,
+                voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus,officia. Quisquam, voluptatibus. Lorem ipsum dolor sit 
+                amet consectetur adipisicing elit. Doloribus, officia. Quisquam voluptatibus. Lorem ipsum 
+                dolor sit amet consectetur adipisicing elit. Doloribus, officia. Quisquam,
+                voluptatibus. Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Doloribus, officia. Quisquam, voluptatibus. Lorem ipsum 
+                dolor sit amet consectetur adipisicing elit. Doloribus, officia. Quisquam,
+                
               </p>
             </div>
 
-            <div className="col-md-6">
+            <div className="col-md-6 mt-3">
               <img
                 src={home1}
                 className="img-fluid"
@@ -36,4 +35,4 @@ const Home = () => {
   );
 };
 
-export default Home
+export default Home;

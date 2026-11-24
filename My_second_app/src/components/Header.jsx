@@ -75,13 +75,7 @@ const Header = () => {
                   </a>
                 </div>
               </li>
-
-              <li className="nav-item">
-                <a className="nav-link disabled" aria-disabled="true">
-                  Disabled
-                </a>
-              </li>
-            </ul>
+</ul>
 
             <form className="hstack gap-2" role="search">
               <input

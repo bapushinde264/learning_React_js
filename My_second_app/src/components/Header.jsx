@@ -1,104 +1,66 @@
-const Header = () => {
+function Header() {
   return (
-    <nav className="navbar md:navbar-expand bg-1">
-      <div className="container-fluid">
-        <a className="navbar-brand" href="#">
-          Navbar
-        </a>
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div className="container-fluid px-0">
+
+        {/* <a className="navbar-brand" href="#">
+          My Website
+        </a> */}
 
         <button
-          className="btn-icon navbar-toggler"
+          className="navbar-toggler"
           type="button"
-          data-bs-toggle="drawer"
-          data-bs-target="#navbarDrawer"
-          aria-controls="navbarDrawer"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarMenu"
+          aria-controls="navbarMenu"
+          aria-expanded="false"
           aria-label="Toggle navigation"
         >
-          <span className="navbar-toggler-icon" aria-hidden="true"></span>
+          <span className="navbar-toggler-icon"></span>
         </button>
 
-        <dialog
-          className="drawer drawer-end"
-          id="navbarDrawer"
-          aria-labelledby="navbarDrawerLabel"
-        >
-          <div className="drawer-header">
-            <h5 className="drawer-title" id="navbarDrawerLabel">
-              Menu
-            </h5>
+        <div className="collapse navbar-collapse" id="navbarMenu">
 
-            <button
-              type="button"
-              className="btn-close"
-              data-bs-dismiss="drawer"
-              aria-label="Close"
-            ></button>
-          </div>
+          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
 
-          <div className="drawer-body mb-2 md:mb-0">
-            <ul className="nav navbar-nav me-auto">
-              <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="#home">
-                  Home
-                </a>
-              </li>
+            <li className="nav-item">
+              <a className="nav-link active" href="#home">Home</a>
+            </li>
 
-              <li className="nav-item">
-                <a className="nav-link" href="#link">
-                  Link
-                </a>
-              </li>
+            <li className="nav-item">
+              <a className="nav-link" href="#about">About</a>
+            </li>
 
-              <li className="nav-item">
-                <button
-                  className="nav-link"
-                  type="button"
-                  data-bs-toggle="menu"
-                  aria-expanded="false"
-                >
-                  Menu
-                </button>
+            <li className="nav-item">
+              <a className="nav-link" href="#services">Services</a>
+            </li>
 
-                <div className="menu">
-                  <a className="menu-item" href="#action">
-                    Action
-                  </a>
+            <li className="nav-item">
+              <a className="nav-link" href="#contact">Contact</a>
+            </li>
 
-                  <a className="menu-item" href="#">
-                    Another action
-                  </a>
+            <li className="nav-item">
+              <a className="nav-link" href="#footer">Footer</a>
+            </li>
 
-                  <hr className="menu-divider" />
+          </ul>
 
-                  <a className="menu-item" href="#">
-                    Something else here
-                  </a>
-                </div>
-              </li>
-</ul>
+          <form className="d-flex">
+            <input
+              className="form-control me-2"
+              type="search"
+              placeholder="Search"
+            />
 
-            <form className="hstack gap-2" role="search">
-              <input
-                className="form-control"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
+            <button className="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
 
-              <button
-                className="btn-solid btn-icon theme-secondary"
-                type="submit"
-              >
-                <svg className="bi" width="16" height="16">
-                  <use href="#search" />
-                </svg>
-              </button>
-            </form>
-          </div>
-        </dialog>
+        </div>
       </div>
     </nav>
   );
-};
+}
 
 export default Header;
